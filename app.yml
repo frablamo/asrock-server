@@ -4,3 +4,15 @@ services:
     extends:
       file: emby.yml
       service: emby
+  radarr:
+    extends:
+      file: radarr.yml
+      service: radarr
+  qbittorrent:
+    extends:
+      file: qbittorrent.yml
+      service: qbittorrent
+  jackett:
+    extends:
+      file: jackett.yml
+      service: jackett

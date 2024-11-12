@@ -1,0 +1,17 @@
+version: "1.0"
+services:
+  radarr:
+    image: ghcr.io/linuxserver/radarr
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+    volumes:
+      - $HOME/asrock-config/radarr/config:/config
+      - /media/usb/movies:/media/movies # Media directory
+      - $HOME/downloads:/downloads
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+
