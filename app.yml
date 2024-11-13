@@ -20,3 +20,7 @@ services:
     extends:
       file: sonarr.yml
       service: sonarr
+  lidarr:
+    extends:
+      file: lidarr.yml
+      service: lidarr

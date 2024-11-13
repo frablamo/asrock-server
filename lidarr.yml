@@ -1,0 +1,16 @@
+version: "1.0"
+services:
+  lidarr:
+    image: lscr.io/linuxserver/lidarr:latest
+    container_name: lidarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+    volumes:
+      - /home/frablamo/asrock-config/lidarr/config:/config
+      - /media/usb/music:/media/music
+      - /home/frablamo/downloads:/downloads
+    ports:
+      - 8686:8686
+    restart: unless-stopped
