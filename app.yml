@@ -16,3 +16,7 @@ services:
     extends:
       file: jackett.yml
       service: jackett
+  sonarr:
+    extends:
+      file: sonarr.yml
+      service: sonarr

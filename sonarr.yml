@@ -1,0 +1,16 @@
+version: "1.0"
+services:
+  sonarr:
+    image: ghcr.io/linuxserver/sonarr
+    container_name: sonarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+    volumes:
+      - /home/frablamo/asrock-config/sonarr/config:/config
+      - /media/usb/series:/media/tv
+      - /home/frablamo/downloads:/downloads
+    ports:
+      - 8989:8989
+    restart: unless-stopped

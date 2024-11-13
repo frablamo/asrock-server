@@ -8,9 +8,9 @@ services:
       - PGID=1000
       - TZ=Europe/Madrid
     volumes:
-      - $HOME/asrock-config/radarr/config:/config
+      - /home/frablamo/asrock-config/radarr/config:/config
       - /media/usb/movies:/media/movies # Media directory
-      - $HOME/downloads:/downloads
+      - /home/frablamo/downloads:/downloads
     ports:
       - 7878:7878
     restart: unless-stopped
