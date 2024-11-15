@@ -10,7 +10,7 @@ services:
     volumes:
       - /home/frablamo/asrock-config/sonarr/config:/config
       - /media/usb/series:/media/tv
-      - /home/frablamo/downloads:/downloads
+      - /media/usb/downloads:/downloads
     ports:
       - 8989:8989
     restart: unless-stopped

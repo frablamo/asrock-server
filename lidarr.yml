@@ -10,7 +10,7 @@ services:
     volumes:
       - /home/frablamo/asrock-config/lidarr/config:/config
       - /media/usb/music:/media/music
-      - /home/frablamo/downloads:/downloads
+      - /media/usb/downloads:/downloads
     ports:
       - 8686:8686
     restart: unless-stopped

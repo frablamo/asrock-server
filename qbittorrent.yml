@@ -11,7 +11,7 @@ services:
       - WEBUI_PORT=8084
     volumes:
       - /home/frablamo/asrock-config/qbittorrent/config:/config
-      - /home/frablamo/downloads:/downloads
+      - /media/usb/downloads:/downloads
     ports:
       - 6881:6881
       - 6881:6881/udp

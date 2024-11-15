@@ -9,8 +9,8 @@ services:
       - TZ=Europe/Madrid
       - AUTO_UPDATE=true
     volumes:
-      - $HOME/asrock-config/jackett/config:/config
-      - $HOME/downloads:/downloads
+      - /home/frablamo/asrock-config/jackett/config:/config
+      - /media/usb/downloads:/downloads
     ports:
       - 9117:9117
     restart: unless-stopped

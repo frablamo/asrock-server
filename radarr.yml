@@ -10,7 +10,7 @@ services:
     volumes:
       - /home/frablamo/asrock-config/radarr/config:/config
       - /media/usb/movies:/media/movies # Media directory
-      - /home/frablamo/downloads:/downloads
+      - /media/usb/downloads:/downloads
     ports:
       - 7878:7878
     restart: unless-stopped
