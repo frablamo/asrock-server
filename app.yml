@@ -4,6 +4,10 @@ services:
     extends:
       file: emby.yml
       service: emby
+  bazarr:
+    extends:
+      file: bazarr.yml
+      service: bazarr
   radarr:
     extends:
       file: radarr.yml
@@ -24,3 +28,7 @@ services:
     extends:
       file: lidarr.yml
       service: lidarr
+  syncthing:
+    extends:
+      file: syncthing.yml
+      service: syncthing

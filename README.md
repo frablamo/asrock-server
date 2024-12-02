@@ -19,7 +19,7 @@ The images used are:
 - [sonarr](https://hub.docker.com/r/linuxserver/sonarr) - Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
 - [lidarr](https://hub.docker.com/r/linuxserver/lidarr) - Lidarr - A fork of Sonarr to work with series à la Couchpotato
 - [qbitorrent](https://hub.docker.com/r/linuxserver/qbittorrent) - The Qbittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.
-
+- [syncthing](https://docs.linuxserver.io/images/docker-syncthing) - Syncthing project to have devices syncronized
 
 
 

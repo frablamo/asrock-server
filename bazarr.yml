@@ -1,0 +1,17 @@
+version: "1.0"
+services:
+  bazarr:
+    image: ghcr.io/linuxserver/bazarr
+    container_name: bazarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+    volumes:
+      - /home/frablamo/asrock-config/bazarr/config:/config
+      - /media/usb/movies:/movies
+      - /media/usb/series:/tv
+      - /media/usb/kids:/kids
+    ports:
+      - 6767:6767
+    restart: unless-stopped
