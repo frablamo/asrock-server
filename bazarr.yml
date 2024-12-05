@@ -1,4 +1,4 @@
-version: "1.0"
+version: "3.0"
 services:
   bazarr:
     image: ghcr.io/linuxserver/bazarr
@@ -9,9 +9,9 @@ services:
       - TZ=Europe/Madrid
     volumes:
       - /home/frablamo/asrock-config/bazarr/config:/config
-      - /media/usb/movies:/movies
-      - /media/usb/series:/tv
-      - /media/usb/kids:/kids
+      - /media/usb/movies:/media/movies
+      - /media/usb/series:/media/tv
+        #      - /media/usb/kids:/kids
     ports:
       - 6767:6767
     restart: unless-stopped

@@ -8,12 +8,9 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-        #      - STHOMEDIR=/syncthing
-        #- STCONFDIR=/config
     volumes:
       - /home/frablamo/asrock-config/syncthing:/var/syncthing
-        #      - /home/frablamo/asrock-config/syncthing:/config
-      - /home/frablamo/syncthing:/syncthing
+      - /medua/usb/syncthing:/syncthing
     ports:
       - 8384:8384 # Web UI
       - 22000:22000/tcp # TCP file transfers
