@@ -10,7 +10,7 @@ services:
       - PGID=1000
     volumes:
       - /home/frablamo/asrock-config/syncthing:/var/syncthing
-      - /medua/usb/syncthing:/syncthing
+      - /media/usb/syncthing:/syncthing
     ports:
       - 8384:8384 # Web UI
       - 22000:22000/tcp # TCP file transfers

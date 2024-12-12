@@ -32,3 +32,7 @@ services:
     extends:
       file: syncthing.yml
       service: syncthing
+  pihole:
+    extends:
+      file: pihole.yml
+      service: pihole

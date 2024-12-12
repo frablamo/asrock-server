@@ -1,4 +1,4 @@
-version: "1.0"
+version: "3"
 services:
   pihole:
     container_name: pihole
@@ -9,10 +9,12 @@ services:
       - "53:53/udp"
       - "67:67/udp" # Only required if you are using Pi-hole as your DHCP server
       - "80:80/tcp"
+    dns:
+      - 127.0.0.1
     environment:
       TZ: 'Europe/London'
-        #WEBPASSWORD: ${PIHOLE_PASSWORD}
-    # Volumes store your data between container upgrades
+        #      WEBPASSWORD: 'admin'
+        # Volumes store your data between container upgrades
     volumes:
       - '/home/frablamo/asrock-config/pihole/etc-pihole:/etc/pihole'
       - '/home/frablamo/asrock-config/pihole/etc-dnsmasq.d:/etc/dnsmasq.d'
